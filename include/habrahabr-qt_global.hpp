@@ -1,0 +1,12 @@
+#ifndef HABRAHABR_GLOBAL_H
+#define HABRAHABR_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(HABRAHABR_LIBRARY)
+#  define HABRAHABRSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define HABRAHABRSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // HABRAHABR_GLOBAL_H
